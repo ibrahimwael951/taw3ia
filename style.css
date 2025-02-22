@@ -68,8 +68,8 @@ nav .links{
     gap: 10px;
 }
 nav .links a{
-    color: white;
-    font: bolder;
+     
+    font: 400;
 }
 .mobile_Btn{
     z-index: 100;
@@ -140,46 +140,56 @@ nav .links a{
 }
 
 
+ 
 .learn_more{
     height: fit-content;
-    padding: 6rem 30px 0 30px;
- 
-}
-.learnMore_Div{
-    height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     justify-content: space-evenly;
     align-items: center;
+    height: fit-content;
+    padding: 6rem 30px 6rem 30px;
+}
+.learn_more .learn_more_content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     
 }
-.learnMore_Div div{
+.learn_more .learn_more_content div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.learn_more ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.learnMore_Div ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.learnMore_Div ul li{
+.learn_more ul li{
     color: rgba(0, 0, 0, 0.755);
     list-style: decimal;
 }
-.learnMore_Div img{
+.learn_more img{
     width: 80vw;
     border-radius: 20px;
+}
+.learn_more_button{
+    width: fit-content;
+    margin: auto;
+    background: #54aa7f;
+    color: white;
 }
 .subjects{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 6rem 30px 0 30px;
+    padding: 6rem 30px 6rem 30px;
 
 }
 .subjects a{
@@ -193,6 +203,7 @@ nav .links a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 
 }
 .subjects a:hover{
@@ -210,62 +221,146 @@ nav .links a{
     width: 90%;
     margin: auto;
 }
-/* 
-#ourTeam{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 6rem 30px 0 30px;
-
-}
-.ourBoard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-}
-.boardMember{
-    position: relative;
-    border-radius: 20px;
-    border: #54aa7f 2px solid;
-    height: 450px;
-    width: 250px;
-    overflow: hidden;
-    
-}
-.boardMember div {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    background: #00000090;
-    padding: 5px 5px 10px 5px;
-    
-} 
-.boardMember div p , .boardMember div h1 {
-    color: white;
-}
-.boardMember img{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -0;
-} */
-
 
 footer{
     background:#54aa7f ;
     padding: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
+footer a{
+    color: rgba(255, 255, 255, 0.752);
+    font-size: 20px;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 400px) {
+ 
+    .subjects{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .subjects a{
+        width: 300px;
+    }
+    
+    
+}
+@media screen and (min-width: 768px) {
+    .subjects a{
+        width: 300px;
+    }
+    nav .links{
+        display: flex;
+    }
+    .mobile_menu{
+        display: none;
+    }
+    .mobile_menu_btn{
+        display: none;
+    }
+    .home_section img{
+        width: 500px;
+    }
+    .learn_more img{
+        width: 500px;
+    }
+    .subjects{
+       gap: 50px 10px 50px 10px;
+
+    }
+
+    .subjects a{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    nav{
+        
+        padding: 10px 50px 10px 50px;
+    }
+    nav .links{
+        gap: 30px;
+    }
+    .home_section{
+        height: 100vh;
+        flex-direction: row-reverse;
+    }
+    .home_section img{
+        border-bottom: none;
+    }
+    .home_content{
+        width: 50%;
+        max-width: 500px;
+    }
+    .home_section img{
+        width: 700px;
+    }
+    .learn_more img{
+        width: 600px;
+    }
+   
+  
+}
+@media screen and (min-width: 1440px) {
+
+    nav{
+        justify-content: space-evenly;
+        padding: 10px 50px 10px 50px;
+    } 
+    .home_section{
+        justify-content: center;
+    }
+       .learn_more{
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+        gap: 20px;
+         
+    }
+    .learn_more .learn_more_content{
+       gap: 50px;
+       width: 50%;
+        
+    }
+}
+
