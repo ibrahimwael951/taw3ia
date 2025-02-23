@@ -210,8 +210,8 @@ footer p {
 
 
 
-/* what is bad web == WIBW */
-.WIBW{
+ 
+.main{
     
     display: flex;
     flex-direction: column;
@@ -220,7 +220,7 @@ footer p {
     justify-content: center;
     height: fit-content;
 }
-.WIBW_content_1{
+.main_content{
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
@@ -231,13 +231,13 @@ footer p {
     width: 100%;
     background: #54aa7f;
 }
-.WIBW_content_1 img{
+.main_content img{
     width: 80%;
     height: 300px;
      object-fit: cover;
      
 }
-.WIBW_content_1 div{
+.main_content div{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -245,15 +245,16 @@ footer p {
     justify-content: center;
     text-align: center;
 }
-.WIBW_content_1 h1{
+.main_content h1{
     color: white;
     font-size: 30px;
 }
-.WIBW_content_1 p{
+.main_content p{
     font-size: 24px;
     color: white;
 }
-.WIBW_content_2{
+/* what is bad web == WIBW */
+.WIBW_content{
     padding: 80px 50px 80px 30px;
     display: flex;
     flex-direction: column;
@@ -261,10 +262,10 @@ footer p {
     align-items: center;
     justify-content: center;
 }
-.WIBW_content_2 h1{
+.WIBW_content h1{
     font-size: 30px;
 }
-.WIBW_content_2 ul{
+.WIBW_content ul{
      
     display: flex;
     flex-direction: column;
@@ -272,11 +273,41 @@ footer p {
     align-items: center;
     justify-content: center;
 }
-.WIBW_content_2 ul li{
+.WIBW_content ul li{
     font-size: 24px;
     list-style: decimal;
 }
 
+
+/* bad comunity == BC */
+.BC_content{
+    padding: 80px 50px 80px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    justify-content: center;
+    max-width: 1440px;
+    margin: auto;
+
+}
+.BC_content_title{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    
+}
+.BC_content_item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    margin-bottom:60px;
+     
+}
+.BC_content_item h1{
+    margin-bottom: 20px;
+}
 
 @media screen and (min-width: 400px) {
  
@@ -305,26 +336,26 @@ footer p {
     .mobile_menu_btn{
         display: none;
     } 
-    .WIBW_content_1{
+    .main_content{
         flex-direction: row;
     }
-    .WIBW_content_1 img{
+    .main_content img{
         width: 400px;
     }
-    .WIBW_content_1 div{
+    .main_content div{
         width: 50%;
         max-width: 500px;
     }
-    .WIBW_content_1 h1{
+    .main_content h1{
         font-size: 24px;
     }
-    .WIBW_content_1 p{
+    .main_content p{
         font-size: 18px;
     }
-    .WIBW_content_2{
+    .WIBW_content{
         padding: 80px 50px 80px 30px;
     }
-    .WIBW_content_2 ul li{
+    .WIBW_content ul li{
         font-size: 24px;
         list-style: decimal;
     }
@@ -348,16 +379,16 @@ footer p {
         justify-content: space-evenly;
         padding: 60px;
     }
-    .WIBW_content_1 div{
+    .main_content div{
         max-width: 600px;
     }
-    .WIBW_content_1 img{
+    .main_content img{
         width: 400px;
     }
-    .WIBW_content_1 h1{
+    .main_content h1{
         font-size: 30px;
     }
-    .WIBW_content_1 p{
+    .main_content p{
         font-size: 24px;
     }
    
