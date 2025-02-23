@@ -219,6 +219,7 @@ footer p {
     align-items: center;
     justify-content: center;
     height: fit-content;
+    padding-top: 40px;
 }
 .main_content{
     padding: 80px 20px;
@@ -235,6 +236,7 @@ footer p {
     width: 80%;
     height: 300px;
      object-fit: cover;
+     border-radius: 20px;
      
 }
 .main_content div{
@@ -253,34 +255,8 @@ footer p {
     font-size: 24px;
     color: white;
 }
-/* what is bad web == WIBW */
-.WIBW_content{
-    padding: 80px 50px 80px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.WIBW_content h1{
-    font-size: 30px;
-}
-.WIBW_content ul{
-     
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-.WIBW_content ul li{
-    font-size: 24px;
-    list-style: decimal;
-}
 
-
-/* bad comunity == BC */
-.BC_content{
+.page_content{
     padding: 80px 50px 80px 30px;
     display: flex;
     flex-direction: column;
@@ -291,13 +267,13 @@ footer p {
     margin: auto;
 
 }
-.BC_content_title{
+.page_content_title{
     text-align: center;
     width: 100%;
     font-size: 40px;
     
 }
-.BC_content_item{
+.page_content_item{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -305,17 +281,17 @@ footer p {
     margin-bottom:60px;
      
 }
-.BC_content_item h1{
+.page_content_item h1{
     margin-bottom: 20px;
 }
-.BC_content_item ul{
+.page_content_item ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: start;
     justify-content: start;
 }
-.BC_content_item ul li{
+.page_content_item ul li{
     font-size: 24px;
     list-style: decimal;
     color: rgba(0, 0, 0, 0.656);
@@ -403,7 +379,12 @@ footer p {
     .main_content p{
         font-size: 24px;
     }
-   
+    .page_content h1{
+     font-size: 32px;
+    }
+   .page_content p{
+    font-size: 20px;
+   }
   
 }
 @media screen and (min-width: 1440px) {
