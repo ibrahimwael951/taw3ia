@@ -308,7 +308,19 @@ footer p {
 .BC_content_item h1{
     margin-bottom: 20px;
 }
+.BC_content_item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+}
+.BC_content_item ul li{
+    font-size: 24px;
+    list-style: decimal;
+    color: rgba(0, 0, 0, 0.656);
 
+}
 @media screen and (min-width: 400px) {
  
     .subjects_content{
@@ -357,7 +369,7 @@ footer p {
     }
     .WIBW_content ul li{
         font-size: 24px;
-        list-style: decimal;
+        list-style: decimal;        
     }
     
     
